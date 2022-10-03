@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 
 app.post('/log', (req, res) => {
-    console.log(req.body);
-    res.send(200);
+    console.log(req.data);
+    res.sendStatus(200);
 })
 
 app.listen(5421, () => {
