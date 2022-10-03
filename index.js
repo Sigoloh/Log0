@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.post('/log', (req, res) => {
-    console.log(req.data);
+app.post('/log', async (req, res) => {
+    console.log(await req.body);
     res.sendStatus(200);
 })
 
